@@ -1,0 +1,174 @@
+body {
+	height: 100%;
+	font-size: 18px;
+	font-family: "Sacramento", sans-serif;
+	display: flex;
+	background: linear-gradient(45deg, #611651, #0f8b1b);
+	justify-content: center;
+	align-items: center;
+	font-weight: 100;
+
+}
+
+.neonText {
+	color: #fff;
+	text-shadow:
+		0 0 7px #fff,
+		0 0 10px #fff,
+		0 0 21px #fff,
+		0 0 42px #bc13fe,
+		0 0 82px #bc13fe,
+		0 0 92px #bc13fe,
+		0 0 102px #bc13fe,
+		0 0 51px #bc13fe;
+}
+
+h1 {
+	font-size: 6.2rem;
+	animation: pulsate 1.5s infinite alternate;
+	border: 0.2rem solid #fff;
+	border-radius: 2rem;
+	padding: 0.4em;
+	box-shadow: 0 0 .2rem #fff,
+		0 0 .2rem #fff,
+		0 0 2rem #bc13fe,
+		0 0 0.8rem #bc13fe,
+		0 0 2.8rem #bc13fe,
+		inset 0 0 1.3rem #bc13fe;
+}
+
+@keyframes pulsate {
+
+	100% {
+
+		text-shadow:
+			0 0 4px #fff,
+			0 0 11px #fff,
+			0 0 19px #fff,
+			0 0 40px #bc13fe,
+			0 0 80px #bc13fe,
+			0 0 90px #bc13fe,
+			0 0 100px #bc13fe,
+			0 0 150px #bc13fe;
+
+	}
+
+	0% {
+
+		text-shadow:
+			0 0 2px #fff,
+			0 0 4px #fff,
+			0 0 6px #fff,
+			0 0 10px #bc13fe,
+			0 0 45px #bc13fe,
+			0 0 55px #bc13fe,
+			0 0 70px #bc13fe,
+			0 0 80px #bc13fe;
+
+	}
+}
+
+h1, h2 {
+	text-align: center;
+	font-weight: 400;
+  }
+
+.btn-mine {
+	border: none;
+	background: initial;
+	font-size: inherit;
+	font-family: cursive;
+	size: 4vw;
+	color: cornsilk;
+	cursor: grab;
+}
+
+#source-html {
+	text-align: -webkit-center;
+	width: 100%;
+}
+
+
+
+
+.content-footer {
+	text-align: -webkit-center;
+}
+
+ul {
+	padding: 0;
+	list-style-type: none;
+}
+
+.near_btn,
+li {
+	font-size: 25px;
+	width: 15em;
+	height: 2em;
+	text-align: center;
+	line-height: 2em;
+	font-family: sans-serif;
+	text-transform: capitalize;
+	position: relative;
+	transition: 0.5s;
+	margin: 0.8em;
+	display: initial;
+}
+
+li::before,
+li::after {
+	content: '';
+	position: absolute;
+	width: 0.01em;
+	height: 0.01em;
+	background-color: gainsboro;
+	border-radius: 50%;
+	transition: 0.5s cubic-bezier(0.5, -0.5, 0.25, 1.5);
+	top: calc(50% - 0.6em / 2);
+}
+
+li::before {
+	left: 0;
+	z-index: -1;
+}
+
+li::after {
+	right: 0;
+	z-index: -2;
+}
+
+li:hover {
+	color: white;
+}
+
+li:hover::before,
+li:hover::after {
+	width: 100%;
+	height: 100%;
+	border-radius: 0;
+	background-color: rgb(193, 135, 255);
+}
+
+li:hover::before {
+	top: 0;
+}
+
+li:hover::after {
+	right: -0.4em;
+	filter: brightness(0.8);
+}
+
+
+p:hover {
+	color: rgb(122, 23, 54);
+	transition-duration: 700ms;
+	font-size: 1vw;
+}
+
+p {
+	color: wheat;
+	font-size: 1vw;
+	font-family: cursive;
+	cursor: initial;
+	transition-duration: 1000ms;
+}
